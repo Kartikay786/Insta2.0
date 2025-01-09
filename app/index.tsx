@@ -83,33 +83,3 @@ const index = () => {
 }
 
 export default index
-
-const styles = StyleSheet.create({})
-
-
-
-{/* <Tab.Navigator
-
-
-
-initialRouteName='Profile' // for make initial tab
-screenOptions={{
-  tabBarActiveTintColor:'red', // for all tab'
-  tabBarInActiveTintColor:'black', // for non tab,
-  tabBarLabelStyle:{
-    fontsize:12     // for tab icon 
-  },
-  tabBarStyle:{
-    height:60 // for tab style
-  }
-}}
->
-  <Tab.Screen 
-  name="Home" 
-  component={Home} 
-  options={{headerShown:false, // header shown
-    tabBarActiveTintColor:'red' ,// color of active tab for particular tab
-    tabBarIcon:()=> (<Icontag/>)
-
-  }}
-  /> */}
