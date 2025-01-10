@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "components/Home/toptab.jsx", "components/Home/story.jsx", "components/Home/post.jsx", "app/Tabs/Home.jsx", "app/index.jsx", "app/Tabs/Like.jsx", "app/Tabs/Post.jsx", "app/Tabs/Profile.jsx", "app/Tabs/Search.jsx"  ]
 }
