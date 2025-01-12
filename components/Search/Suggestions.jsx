@@ -14,10 +14,12 @@ const Suggestions = () => {
     "For you",
   ];
   return (
-    <View
-        style={styles.main}
-    >
-      <ScrollView horizontal style={styles.container}>
+    <View style={styles.main}>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={styles.container}
+      >
         {suggestions.map((suggestion, index) => (
           <View key={index} style={styles.view}>
             <Text>{suggestion}</Text>
@@ -34,10 +36,10 @@ const styles = StyleSheet.create({
   main: {
     justifyContent: "center",
     alignItems: "center",
-    height : 33,
+    height: 33,
   },
   container: {
-    flexDirection : "row",
+    flexDirection: "row",
   },
   view: {
     borderRadius: 5,
@@ -46,7 +48,7 @@ const styles = StyleSheet.create({
     padding: 9,
     alignItems: "center",
     justifyContent: "center",
-    marginLeft : 4
+    marginLeft: 4,
   },
   text: {
     fontSize: 14,

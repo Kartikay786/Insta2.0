@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     } ,
     id : {
         fontSize : 25,
-        fontWeight : '900'
+        fontWeight : '700'
     },
     menu : {
         height : 20,
