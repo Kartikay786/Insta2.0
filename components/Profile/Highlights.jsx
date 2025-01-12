@@ -7,7 +7,7 @@ const ProfileHighlights = ({ highlights }) => {
       horizontal
       showsHorizontalScrollIndicator={false} 
       contentContainerStyle={{ padding: 5 }}
-      style={{ maxHeight: 100 }} // Restrict height
+      style={{ maxHeight: 130 }} // Restrict height
     >
       <View style={{ alignItems: "center" }}>
         <View style={styles.highlight}>
