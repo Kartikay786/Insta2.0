@@ -16,7 +16,11 @@ const Toptab = () => {
         />
       </View>
       {/* <Text style={{fontSize:22,fontWeight:'semibold'}}>Instagram</Text> */}
-      <Send name='send' size={24} color={grey} />
+      <Send
+         name='send' 
+         size={24} 
+         color={grey} 
+      />
     </View>
   )
 }
