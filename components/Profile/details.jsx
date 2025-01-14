@@ -70,10 +70,12 @@ const styles = StyleSheet.create({
   },
   button : {
     padding : 5 ,
-    justifyContent : "center",
-    alignItems : "center  ",
     borderRadius : 3,
     borderColor : '#DCDCDD',
-    borderWidth : 1
+    borderWidth : 1,
+    marginTop : 20
+  },
+  buttonText : {
+    textAlign : "center"
   }
 });

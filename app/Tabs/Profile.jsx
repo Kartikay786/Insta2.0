@@ -1,54 +1,171 @@
-import { StyleSheet, Text, View } from "react-native";
+import React, { useState } from "react";
+import { ScrollView, StyleSheet, View } from "react-native";
 import ProfileHeader from "../../components/Profile/header";
 import ProfileDetailsSection from "../../components/Profile/details";
 import ProfileHighlights from "../../components/Profile/Highlights";
-import React, { useState } from "react";
-import { white } from "@/constants/Colors";
+import ProfileBottomLayout from "../../components/Profile/BottomLayout";
 
 const Profile = () => {
   const [user, setUser] = useState({
     username: "@evolving",
     name: "Evolving Coders",
-    bio: "ever tried, ever failed, try again, fail again, fail better, \n ",
-    posts: ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-    followers: ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-    following: ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-    profile:
-      "https://i.pinimg.com/474x/02/bc/1d/02bc1ddfb478c7069ac1db5017955648.jpg",
-    links: [],
-    highlights: [
+    bio: "ever tried, ever failed, try again, fail again, fail better.",
+    posts: [
       {
-        title: "Friends",
-        id: "1",
-        cover:
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+        tagged: false,
+      },
+      {
+        imgurl:
           "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
       },
-
       {
-        id: "2",
-        title: "Projects",
-        cover:
-          "https://plus.unsplash.com/premium_photo-1687119905599-09fe40700389?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fDF4MXxlbnwwfHwwfHx8MA%3D%3D",
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
       },
-
       {
-        id: "3",
-        title: "Members",
-        cover:
-          "https://plus.unsplash.com/premium_photo-1678760860912-e8c2ce35b882?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fDF4MXxlbnwwfHwwfHx8MA%3D%3D",
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
+      },
+      {
+        imgurl:
+          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        tagged: true,
       },
     ],
+
+    followers: Array(16).fill(""),
+    following: Array(16).fill(""),
+    profile:
+      "https://i.pinimg.com/474x/02/bc/1d/02bc1ddfb478c7069ac1db5017955648.jpg",
+    highlights: Array(7).fill({
+      title: "Friends",
+      id: "1",
+      cover:
+        "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500",
+    }),
+    // More highlights...
   });
 
   return (
-    <View style={{ backgroundColor: "white", flex: 1 }}>
+    <ScrollView
+      style={styles.scrollView}
+      contentContainerStyle={styles.contentContainer}
+    >
       <ProfileHeader username={user.username} />
       <ProfileDetailsSection user={user} />
       <ProfileHighlights highlights={user.highlights} />
-    </View>
+      <ProfileBottomLayout posts={user.posts} />
+    </ScrollView>
   );
 };
 
 export default Profile;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  scrollView: {
+    backgroundColor: "white",
+  },
+  contentContainer: {
+    paddingBottom: 20, // Enough space for scrolling past the last row
+  },
+});
