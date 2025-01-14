@@ -10,140 +10,117 @@ const Profile = () => {
     username: "@evolving",
     name: "Evolving Coders",
     bio: "ever tried, ever failed, try again, fail again, fail better.",
-    posts: [
+    posts:[ 
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
-        tagged: false,
-      },
-      {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+      imgurl: "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      tagged: false,
+    },
+    {
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
       {
-        imgurl:
-          "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8MXgxfGVufDB8fDB8fHww",
+        imgurl: "https://media.istockphoto.com/id/2167520644/photo/beautiful-iceberg-in-the-ocean-with-a-view-under-water-global-warming-concept-melting-glacier.webp?a=1&b=1&s=612x612&w=0&k=20&c=dVO9rDvs9CtbBHA7nLkQrksTYoth9P2SxyS2SxfT8J4=zj",
         tagged: true,
       },
-    ],
-
+  ],
+    
+    
     followers: Array(16).fill(""),
     following: Array(16).fill(""),
     profile:
       "https://i.pinimg.com/474x/02/bc/1d/02bc1ddfb478c7069ac1db5017955648.jpg",
     highlights: Array(7).fill({
-      title: "Friends",
-      id: "1",
-      cover:
-        "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500",
-    }),
-    // More highlights...
+        title: "Friends",
+        id: "1",
+        cover: "https://images.unsplash.com/photo-1709398668435-bc1222eb405e?w=500",
+      }),
+      // More highlights...
+    
   });
 
   return (
