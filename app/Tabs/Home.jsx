@@ -5,12 +5,13 @@ import { white } from '@/constants/Colors'
 import Story from '@/components/Home/story'
 import PostContainer from '@/components/Home/post'
 
-const Home = () => {
+const Home = ({navigation}) => {
+ 
   return (
-    <View style={{flex:1,backgroundColor:white}}>
-      <Toptab/>
-      <Story/>
-      <PostContainer/>
+    <View style={{ flex: 1, backgroundColor: white }}>
+      <Toptab navigation={navigation} />
+      <Story />
+      <PostContainer />
     </View>
   )
 }
