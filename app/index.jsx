@@ -17,7 +17,7 @@ import PostIcon from '@expo/vector-icons/Octicons';
 import LikeIcon from '@expo/vector-icons/EvilIcons';
 import ProfileIcon from '@expo/vector-icons/EvilIcons';
 import Toptab from '@/components/Home/toptab';
-
+import Entypo from '@expo/vector-icons/Entypo';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -59,11 +59,11 @@ const Tabs = ({navigation}) => {
         }}
       />
       <Tab.Screen
-        name='Like'
+        name='Reels'
         component={Like}
         options={{
           headerShown: false,
-          tabBarIcon: () => (<LikeIcon name='heart' size={34} color='black' />)
+          tabBarIcon: () => (<Entypo name="video" size={24} color="black" />)
         }}
       />
       <Tab.Screen
