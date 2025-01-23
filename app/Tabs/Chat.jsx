@@ -52,6 +52,16 @@ const Chat = ({navigation}) => {
       name : "Shivang Pandey",
       lastMessage : "Shivang Pandey is Great!"
     },
+    {
+      pfp : "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      name : "Shivang Pandey",
+      lastMessage : "Shivang Pandey is Great!"
+    },
+    {
+      pfp : "https://images.unsplash.com/photo-1529524987368-af489318987c?w=500",
+      name : "Shivang Pandey",
+      lastMessage : "Shivang Pandey is Great!"
+    },
   ]
 
   return (

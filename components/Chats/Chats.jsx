@@ -1,11 +1,11 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Feather from '@expo/vector-icons/Feather';
 const Chats = ({userChats}) => {
   return (
     <View style={styles.container}>
       {userChats.map((chat, idx) => (
-        <View key={idx} style={styles.chat}>
+        <Pressable key={idx} style={styles.chat}>
             <View style={{flexDirection : "row"}}>
             <View>
                 <Image style={styles.pfp} source={{uri : chat.pfp}} />
@@ -18,7 +18,7 @@ const Chats = ({userChats}) => {
             <View style={styles.last}>
             <Feather name="camera" size={24} color="black" />
             </View>
-        </View>
+        </Pressable>
       ))}
     </View>
   )
@@ -31,11 +31,11 @@ const styles = StyleSheet.create({
         marginTop : 20
     },
     pfp : {
-        width : 70,
-        height : 70,
+        width : 50,
+        height : 50,
         backgroundColor : "#444",
         padding : 3,
-        borderRadius : "100%",
+        borderRadius : 500,
         marginRight : 5
     },
     chat : {

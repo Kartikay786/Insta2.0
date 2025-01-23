@@ -2,17 +2,20 @@ import { Button, Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { useNavigation } from "expo-router";
 
 const Header = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <View style={styles.one}>
-        <Pressable onPress={() => navigation.navigate("/")}>
+        <Pressable onPress={() => navigation.navigate("index")}>
           <AntDesign name="arrowleft" size={24} color="black" />
         </Pressable>
-        <View style={{flexDirection : "row"}}>
+        <View style={{ flexDirection: "row" }}>
           <Text style={styles.text}>evolving</Text>
-          <AntDesign style={{marginTop : 5}} name="down" size={17} color="black" />
+          <AntDesign style={{ marginTop: 5 }} name="down" size={13} color="black" />
         </View>
         <Pressable>
           <FontAwesome name="pencil-square-o" size={24} color="black" />
@@ -45,7 +48,7 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
   search: {
-    padding: 7,
+    padding: 9,
     marginTop: 20,
     backgroundColor: "#dadada",
     borderRadius: 10,
