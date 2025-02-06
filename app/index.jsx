@@ -6,7 +6,7 @@ import Home from './Tabs/Home';
 import { NavigationContainer } from '@react-navigation/native';
 import Search from './Tabs/Search';
 import Post from './Tabs/Post';
-import Like from './Tabs/Like';
+import Reel from './Tabs/Reel';
 import Profile from './Tabs/Profile';
 import Chat from './Tabs/Chat';
 import Notification from './Tabs/Notification'
@@ -14,9 +14,7 @@ import Notification from './Tabs/Notification'
 import HomeIcon from '@expo/vector-icons/Foundation';
 import SearchIcon from '@expo/vector-icons/EvilIcons';
 import PostIcon from '@expo/vector-icons/Octicons';
-import LikeIcon from '@expo/vector-icons/EvilIcons';
 import ProfileIcon from '@expo/vector-icons/EvilIcons';
-import Toptab from '@/components/Home/toptab';
 import Entypo from '@expo/vector-icons/Entypo';
 
 const Tab = createBottomTabNavigator();
@@ -60,7 +58,7 @@ const Tabs = ({navigation}) => {
       />
       <Tab.Screen
         name='Reels'
-        component={Like}
+        component={Reel}
         options={{
           headerShown: false,
           tabBarIcon: () => (<Entypo name="video" size={24} color="black" />)

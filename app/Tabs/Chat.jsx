@@ -69,7 +69,7 @@ const Chat = ({navigation}) => {
     <ScrollView  >
       {/* <Text>Chat</Text> */}
       <Header />
-      <Chats userChats={userChats } />
+      <Chats navigation={navigation} userChats={userChats } />
     </ScrollView>
     </View>
   )

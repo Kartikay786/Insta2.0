@@ -2,15 +2,13 @@ import { Button, Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
-import { useNavigation } from "expo-router";
 
-const Header = () => {
-  const navigation = useNavigation();
+const Header = ({navigation}) => {
 
   return (
     <View style={styles.container}>
       <View style={styles.one}>
-        <Pressable onPress={() => navigation.navigate("index")}>
+        <Pressable onPress={()=> navigation.navigate('BottomTabs')}>
           <AntDesign name="arrowleft" size={24} color="black" />
         </Pressable>
         <View style={{ flexDirection: "row" }}>
