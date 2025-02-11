@@ -1,51 +1,65 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet, Image } from "react-native";
 
 const Notifications = ({ icon, user, message, timestamp, priority, seen }) => {
   return (
     <View style={[styles.notificationItem, seen ? styles.seen : styles.unseen]}>
-      <Text style={styles.icon}>{icon}</Text>
+      <Image
+        source={{ uri: 'https://i.pinimg.com/736x/63/38/6c/63386c858d65101ad5ab1dca14cc4b77.jpg' }}
+        style={styles.avatar}
+      />
       <View style={styles.notificationText}>
-        <Text>
+        <Text style={styles.message}>
           <Text style={styles.user}>{user}</Text> {message}
         </Text>
         <Text style={styles.timestamp}>{timestamp.toLocaleString()}</Text>
-        <Text style={styles.priority}>Priority: {priority}</Text>
       </View>
+      {icon && <Text style={styles.icon}>{icon}</Text>}
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   notificationItem: {
-    flexDirection: 'row',
-    padding: 10,
+    flexDirection: "row",
+    paddingVertical: 10,
+    paddingHorizontal: 15,
     borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
+    borderBottomColor: "#ddd",
+    alignItems: "center",
+    backgroundColor: "#fff",
   },
   seen: {
-    backgroundColor: '#f0f0f0',
+    backgroundColor: "#f9f9f9",
   },
   unseen: {
-    backgroundColor: '#fff',
+    backgroundColor: "#ffffff",
+  },
+  avatar: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    marginRight: 12,
   },
   icon: {
-    fontSize: 24,
-    marginRight: 10,
+    fontSize: 20,
+    marginLeft: 10,
   },
   notificationText: {
     flex: 1,
   },
   user: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
+    color: "#000",
+  },
+  message: {
+    fontSize: 14,
+    color: "#000",
   },
   timestamp: {
-    color: '#999',
+    color: "#999",
     fontSize: 12,
-  },
-  priority: {
-    fontSize: 12,
-    color: '#d32f2f',
+    marginTop: 2,
   },
 });
 

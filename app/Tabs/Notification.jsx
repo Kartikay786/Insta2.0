@@ -1,10 +1,9 @@
 import {
-  Button,
+  Pressable,
   StyleSheet,
   Text,
   View,
   ScrollView,
-  Pressable,
 } from "react-native";
 import React from "react";
 import AntDesign from "@expo/vector-icons/AntDesign";
@@ -48,7 +47,9 @@ const Notification = ({ navigation }) => {
       "nathan",
       "olivia",
     ];
+
     const priorityLevels = ["high", "medium", "low"];
+
     const icons = {
       "liked your photo": "❤️",
       "liked your story": "🔥",
@@ -88,10 +89,8 @@ const Notification = ({ navigation }) => {
     };
   });
 
-  console.log(notification)
-
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <View style={styles.container}>
         <Pressable
           style={styles.button}
@@ -101,11 +100,19 @@ const Notification = ({ navigation }) => {
         </Pressable>
         <Text style={styles.text}>Notification</Text>
       </View>
-      <View style={{ flex: 1 }}>
+      <ScrollView style={{ flex: 1 }}>
         {notification.map((notif) => (
-          <Notifications icon={notif.icon} user={notif.byUser} message={notif.category} timestamp={notif.timestamp} priority={notif.priority} seen={notif.seen} />
+          <Notifications
+            key={notif.id}
+            icon={notif.icon}
+            user={notif.byUser}
+            message={notif.type}
+            timestamp={notif.timestamp}
+            priority={notif.priority}
+            seen={notif.seen}
+          />
         ))}
-      </View>
+      </ScrollView>
     </View>
   );
 };
@@ -115,7 +122,11 @@ export default Notification;
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    marginTop: 5,
+    alignItems: "center",
+    padding: 10,
+    backgroundColor: "#f9f9f9",
+    borderBottomWidth: 1,
+    borderBottomColor: "#ddd",
   },
   button: {
     alignItems: "center",
@@ -124,8 +135,8 @@ const styles = StyleSheet.create({
     width: 40,
   },
   text: {
-    marginLeft: 40,
-    marginTop: 5,
+    marginLeft: 20,
     fontSize: 20,
+    fontWeight: "bold",
   },
 });
